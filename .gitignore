@@ -7,3 +7,4 @@ config.js
 ./tests
 jest.config.js
 RnRtest.js
+tests/
