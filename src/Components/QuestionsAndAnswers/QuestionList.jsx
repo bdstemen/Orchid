@@ -77,8 +77,6 @@ const QuestionList = ({name, question}) => {
       } else { return 0 }
     });
     setQA(sortedAnswers);
-    // console.log(qA);
-    // setQuestionList(qA.slice(0,numberOfA))
     },[question])
 
 

@@ -25,7 +25,7 @@ const MultiFileUpload = ({imageURLS, handleImageUrls}) => {
     const formData = new FormData();
     formData.append('file', selectedFile);
     formData.append('tags', `codeinfuse, medium, gist`);
-    formData.append('upload_preset', 'FECimages'); //folder name
+    formData.append('upload_preset', 'FECimages');
     formData.append('api_key', '272364821824685');
     formData.append('timestamp', (Date.now() / 1000) || 0);
     setIsLoading(true);
@@ -35,7 +35,6 @@ const MultiFileUpload = ({imageURLS, handleImageUrls}) => {
     })
       .then((response) => {
         const data = response.data;
-        // console.log(data);
         const imageurl = data.secure_url;
         console.log(imageurl);
         handleImageUrls(imageurl);

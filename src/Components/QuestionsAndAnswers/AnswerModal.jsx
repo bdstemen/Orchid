@@ -90,7 +90,6 @@ const AnswerModal = ({url, setUrl,modalFormA, setModalFormA, name,question,formE
           <ImageUpload handleurl = {handleImageUrls} image={image} setImage={setImage} url={url}setUrl={setUrl}/>
         }
         </label>
-        {/* <input type='submit' value ="Add Images"/> */}
         <input type='submit' value='Submit'/>
        </form>
        </ModalContent>

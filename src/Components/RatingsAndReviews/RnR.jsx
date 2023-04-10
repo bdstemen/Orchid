@@ -52,8 +52,6 @@ const RnR = ({productID, productName, handleTrack}) => {
   const obtainReviews = () => {
     axios.get(`/reviews?product_id=${productID}&count=2000&sort=${sortBy}`)
     .then((data) => {
-        // console.log(data.data); //data.data.count has how many reviews
-        // console.log(data.data.results);
         setReviewLibrary(data.data.results);
         handleRenderList(data.data.results);
         if (data.data.results.length < 2) {
@@ -98,7 +96,7 @@ const RnR = ({productID, productName, handleTrack}) => {
   };
 
   const handleBarFilter = (number) => {
-    if (typeof number !== "number") { //if not number, just reset
+    if (typeof number !== "number") {
       setRenderList(number)
     } else {
       if (renderList.indexOf(number) === -1) {
@@ -109,18 +107,13 @@ const RnR = ({productID, productName, handleTrack}) => {
     }
   }
 
-  //for ratings
-
   const handleSortBy = (string) => {
      setSortBy(string);
-    //  setRenderList([]);
   };
 
-  //for reviews.meta
   useEffect(()=>{
     axios.get(`/reviews/meta?product_id=${productID}`)
       .then((data) => {
-        // console.log(data.data); //data.data.count has how many reviews
         setRatings(data.data.ratings);
         setCharacteristics(data.data.characteristics);
         setAvgRating(calculateAvgRating(data.data.ratings));
@@ -175,7 +168,6 @@ const RnR = ({productID, productName, handleTrack}) => {
           <ReviewsList reviews={reviews} reviewCount={reviewCount} renderCount={renderCount} handleMoreReviews={handleMoreReviews} renderList={renderList} handleBarFilter={handleBarFilter} handleSortBy={handleSortBy} sortBy={sortBy} setIsWritingReview={setIsWritingReview} searchInput={searchInput} handleSearch={handleSearch} handleTrack={handleTrack}/>
         </ReviewsContainer>
         <WriteAReview isWritingReview={isWritingReview} onClose={() => setIsWritingReview(false)} characteristics={characteristics} productID={productID} productName={productName} obtainReviews={obtainReviews}/>
-        {/* {trackData.map((data) => <div>{data}</div>)} */}
       </RnRContainer>
     </div>
 

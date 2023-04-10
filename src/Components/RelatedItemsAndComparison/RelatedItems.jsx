@@ -13,7 +13,6 @@ const RelatedItems = ({productId, setproductId, productInfo, selectedStyle}) => 
   let GetRelatedProductsList = () => {
     axios.get(`/products/${productId}/related`)
     .then((res) => {
-      // console.log('related products: ', res.data);
       GetRelatedProductsInfo(res.data);
     }
     )
@@ -41,7 +40,6 @@ const RelatedItems = ({productId, setproductId, productInfo, selectedStyle}) => 
       })
       Promise.all(relatedProductsInfo)
       .then((result) => {
-        // console.log('array of related products info: ', result);
         setrelatedProducts(result);
       })
       .catch((err) => {

@@ -10,11 +10,6 @@ import styled from 'styled-components';
   margin: 0px 5px;
   `;
 
-  // const BackgroundBar = styled.div`
-  //   background-color: grey;
-  //   height: 10px;
-  //   width: 50px;
-  // `;
   const Bar = styled.div`
   background-color: black;
   height: 10px;

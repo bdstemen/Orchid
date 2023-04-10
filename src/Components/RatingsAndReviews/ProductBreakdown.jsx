@@ -42,15 +42,12 @@ import styled from 'styled-components';
 
 const ProductBreakdown = ({characteristic, category}) => {
 
-  // if(category === "Fit") {
-
-  // }
   return (
    <Container>
     <div>{category}</div>
     <Pointer style={{left: (2 + Math.round(characteristic.value * 208 / 5)) + "px"}}/>
     {[...new Array(5)].map(() => <ScaleBar></ScaleBar>)}
-    {/* <span>{Math.round(characteristic.value * 100) / 100}</span><br/> */}
+
     <LowText>Poor</LowText>
     <HighText>Great</HighText>
    </Container>

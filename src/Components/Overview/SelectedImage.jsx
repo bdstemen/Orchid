@@ -5,7 +5,6 @@ const MainImage = styled.img`
   width: 100%;
   height: 814px;
   object-fit: cover;
-  // object-fit: contain;
   &:hover {
     cursor: zoom-in;
   }

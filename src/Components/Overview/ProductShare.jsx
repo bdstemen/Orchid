@@ -6,7 +6,7 @@ const ShareContainer = styled.span`
   margin: 10px 5px;
 `;
 
-const ProductShare = (props) => {
+const ProductShare = () => {
 
   return (
     <ShareContainer>

@@ -75,7 +75,6 @@ const AddToCart = (props) => {
 
   const [confirmation, setConfirmation] = useState(false);
 
-  // functions
   const handleAddToCart = (e) => {
     if (!props.options.sku_id) {
       props.setDisplayError(true);

@@ -25,11 +25,6 @@ import Form from './Form.jsx';
     ` }
   `;
 
-  // const OverlayHidden = styled(Overlay)`
-  //   opacity: 0;
-  //   visibility: hidden;
-  // `;
-
   const Container = styled.div`
      width: 75%;
      height:  90%;
@@ -50,12 +45,6 @@ import Form from './Form.jsx';
 
 const WriteAReview = ({isWritingReview, onClose, characteristics, productID, productName, obtainReviews}) => {
 
-
-  // const ReviewForm = styled.form`
-  //   /* display: block; */
-  // `;
-
-  // if (!isWritingReview) return <OverlayHidden>Write a Review</OverlayHidden>;
   return (
     <Overlay data-testid="review-modal-overlay" isWritingReview={isWritingReview}>
       <Container data-testid="form-container" >

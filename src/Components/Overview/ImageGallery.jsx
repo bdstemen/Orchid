@@ -5,7 +5,6 @@ import ExpandedImage from './ExpandedImage.jsx';
 import styled from 'styled-components';
 import { AiOutlineArrowDown, AiOutlineArrowLeft, AiOutlineArrowRight, AiOutlineArrowUp } from 'react-icons/ai';
 
-// styles
 const Gallery = styled.div`
   position: relative;
   display: flex;
@@ -66,15 +65,6 @@ const ButtonContainer = styled.div`
   justify-content: space-between;
 `;
 
-const ExpandedButtonContainer = styled.div`
-  position: relative;
-  width: 100%;
-  margin: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-
 const Arrow = styled.i`
   &:hover {
     cursor: pointer;
@@ -96,7 +86,6 @@ const defualt_photo = {
 
 const ImageGallery = (props) => {
 
-  // state
   const [photoIndex, setPhotoIndex] = useState(0);
   const [sliderLimits, setSliderLimits] = useState({min:0, max: 6});
   const [photos, setPhotos] = useState([]);
@@ -118,7 +107,6 @@ const ImageGallery = (props) => {
     setPhotos(props.photos.slice(sliderLimits.min, sliderLimits.max + 1));
   }, [sliderLimits]);
 
-  // functions
   const sliderDown = () => {
     setSliderLimits({
       min: sliderLimits.min + 1,

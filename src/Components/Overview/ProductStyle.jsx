@@ -12,7 +12,6 @@ const PriceContainer = styled.div`
 
 const ProductStyle = (props) => {
 
-  // state
   const [options, setOptions] = useState({
     sku_id: null,
     selectedSize: null,
@@ -25,7 +24,6 @@ const ProductStyle = (props) => {
   useEffect(() => {
   }, [options]);
 
-  // functions
   const handleSelectSize = (sku_id, selectedSize, availableQuantity) => {
     if (displayError) {
       setDisplayError(false);
@@ -64,7 +62,7 @@ const ProductStyle = (props) => {
         : <p>${props.selectedStyle.original_price}</p>
         }
       </PriceContainer>
-      <p><b>Style > </b>{props.selectedStyle.name}</p>
+      <p><b>Style</b>{props.selectedStyle.name}</p>
       <StyleSelector styles={props.allStyles} selectedStyleID={props.selectedStyle.style_id} handleChangeStyle={handleChangeStyle} handleTrack={props.handleTrack}/>
       <SizeSelector skus={props.selectedStyle.skus} options={options} handleSelectSize={handleSelectSize} handleTrack={props.handleTrack}/>
       <AddToCart options={options} handleChangeQuantity={handleChangeQuantity} displayError={displayError} setDisplayError={setDisplayError} handleTrack={props.handleTrack}/>
