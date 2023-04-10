@@ -3,10 +3,10 @@
 Orchid is a minimalistic yet elegant single-page shopping website designed to promote an intuitive, straightforward user experience. This project was completed over the course of three weeks by a team of 4 students for the front end capstone portion of Hack Reactor’s software engineering immersive program.
 
 ## Contributors
-Product Overview: Ben Stemen - [Github](http://github.com/bdstemen) - [LinkedIn](http://linkedin.com/in/ben-stemen)
-Related Items & Comparison: Sara Kim - [Github](https://github.com/sarakim323) - [LinkedIn](https://www.linkedin.com/in/sarakim323/)
-Questions & Answers: Nika Woodfill - [Github](https://github.com/nikawoodfill) - [LinkedIn](https://www.linkedin.com/in/nika-woodfill/)
-Ratings & Reviews: Andy Lin - [Github](https://github.com/andylin1212) - [LinkedIn](https://www.linkedin.com/in/ycnd0/)
+Product Overview: Ben Stemen - [Github](http://github.com/bdstemen) - [LinkedIn](http://linkedin.com/in/ben-stemen)  
+Related Items & Comparison: Sara Kim - [Github](https://github.com/sarakim323) - [LinkedIn](https://www.linkedin.com/in/sarakim323/)  
+Questions & Answers: Nika Woodfill - [Github](https://github.com/nikawoodfill) - [LinkedIn](https://www.linkedin.com/in/nika-woodfill/)  
+Ratings & Reviews: Andy Lin - [Github](https://github.com/andylin1212) - [LinkedIn](https://www.linkedin.com/in/ycnd0/)  
 
 
 ## Tech Stack
