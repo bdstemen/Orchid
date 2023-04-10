@@ -4,3 +4,6 @@ node_modules
 bundle.js
 coverage
 config.js
+./tests
+jest.config.js
+RnRtest.js
