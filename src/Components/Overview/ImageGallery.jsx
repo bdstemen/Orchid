@@ -151,9 +151,6 @@ const ImageGallery = (props) => {
     }
   };
 
-  useEffect(() => {
-  }, [hoverEnabled]);
-
   return (
     <Gallery>
       {!props.showExpandedImage
